@@ -19,7 +19,7 @@ void PalindromNumber(int num)
     }
 }
 Console.Write("Input integer five-digit number: ");
-double num = Convert.ToInt32(Console.ReadLine());  
+int num = Convert.ToInt32(Console.ReadLine());  
 PalindromNumber(num);
 */
 
