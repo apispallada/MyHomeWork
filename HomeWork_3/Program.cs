@@ -2,24 +2,24 @@
 Задача 19: напишите программу, которая принимает на вход пятизначное число и проверяет, является ли 
 оно палиндромом.
 
-void PalindromNumber(double num)
+void PalindromNumber(int num)
 {         
     if (num <= 9999 || num >= 100000)
         Console.Write("Incorrect number!");
     else
     {
-        double n1 = num/10000;
-        double n2 = (num/1000)%10;
-        double n3 = (num/10)%10;
-        double n4 = num%10;
+        int n1 = num/10000;
+        int n2 = (num/1000)%10;
+        int n3 = (num/10)%10;
+        int n4 = num%10;
         if (n1==n4 && n2==n3)
             Console.Write("Yes!");
         else
              Console.Write("No!");
     }
 }
-Console.Write("Input doubleeger five-digit number: ");
-double num = Convert.Todouble32(Console.ReadLine());  
+Console.Write("Input integer five-digit number: ");
+double num = Convert.ToInt32(Console.ReadLine());  
 PalindromNumber(num);
 */
 
@@ -51,11 +51,11 @@ Console.Write("A("  + xA + "," + yA + "," + zA + "); B(" + xB + "," + yB + "," +
 /*
 Задача 23: напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-void InCube(double N)
+void InCube(int N)
 {
     if (N > 0)
     {
-        double count = 1;
+        int count = 1;
         Console.Write( N + " -> ");
         while (count <= N)
         {
@@ -65,7 +65,7 @@ void InCube(double N)
     }
     else
     {
-        double count = -1;
+        int count = -1;
         Console.Write( N + " -> ");
         while (count >= N)
         {
@@ -76,7 +76,7 @@ void InCube(double N)
         
 }
 Console.WriteLine("Введите целое число: ");
-double num = Convert.Todouble32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 InCube(num);
 */
         
