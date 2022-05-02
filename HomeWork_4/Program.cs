@@ -1,4 +1,5 @@
-﻿int[] CreateRandomArray(int size, int min, int max)
+﻿/*
+int[] CreateRandomArray(int size, int min, int max)
 {
     int[] array = new int [size];
     for (int i = 0; i < size; i++)
@@ -57,7 +58,7 @@ void DifferenceMaxMin(int[] array)
     int diff = (max - min);
     Console.WriteLine("The difference = " + diff);
 }
-
+*/
 /*
 Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, 
 которая покажет количество чётных чисел в массиве.
@@ -79,9 +80,10 @@ SumOfOddElements(myArray);
 /*
 Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным 
 элементами массива.
-*/
+
 int[] myArray = CreateRandomArray(15, 0, 1000);
 ShowArray(myArray);
 SelectionSort(myArray);
 ShowArray(myArray);
 DifferenceMaxMin(myArray);
+*/
